@@ -7,13 +7,27 @@
   <body>
     <div class="container center">
       <h1 class="center title">My TODO App</h1>
+
       <div class="flow-right controls">
         <span>Item count: <span id="item-count">0</span></span>
         <span>Unchecked count: <span id="unchecked-count">0</span></span>
       </div>
+
       <button class="button center" onClick="newTodo()">New TODO</button>
+      <div class="center" id="text-container"></div>
+
       <ul id="todo-list" class="todo-list"></ul>
     </div>
-    <script src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prop-types/15.6.0/prop-types.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script
+      src="https://unpkg.com/react@16/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script type="text/babel" src="./script.js"></script>
   </body>
 </html>

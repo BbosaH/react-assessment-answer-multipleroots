@@ -2,7 +2,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   background-color: #eee;
   margin: 0;
   padding: 0;
@@ -33,7 +34,9 @@ ul {
   height: 100vh;
 }
 
-.title, .controls, .button {
+.title,
+.controls,
+.button {
   flex: none;
 }
 
@@ -54,6 +57,10 @@ ul {
 
 .todo-checkbox {
   margin: 10px;
+  height: 30px;
+  width: 30px;
+  background-color: green;
+  color: white;
 }
 
 .todo-container {
@@ -63,4 +70,35 @@ ul {
 
 .todo-container:first-of-type {
   border-top: 1px solid #333;
+}
+
+.todo-delete {
+  background-color: crimson;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  height: 30px;
+  width: 70px;
+  float: right;
+}
+.todo-text {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  padding-bottom: 30px;
+}
+.todo-container {
+  background-color: aqua;
+  border: white 1px solid;
+}
+
+.todo-crossed {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  padding-bottom: 30px;
+  color: grey;
 }
